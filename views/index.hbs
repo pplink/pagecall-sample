@@ -1,0 +1,45 @@
+<style>
+  html, body {
+    font-family: sans-serif;
+  }
+  .form {
+  }
+  .form-group {
+    margin: 12px 0;
+  }
+  .form-group input[type="text"] {
+    margin-left: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: black solid 1px;
+    height: 22px;
+  }
+  .btn {
+    cursor: pointer;
+    height: 30px;
+  }
+</style>
+<h1>PageCall Sample</h1>
+<form class="form" method="post" action="/connect-in" target="_blank">
+  <div class="form-group">
+    <label>MyId</label>
+    <input
+      class="form-control"
+      type="text"
+      name="myId"
+      placeholder="userId">
+  </div>
+  <div class="form-group">
+    <label>publicRoomId</label>
+    <input
+      class="form-control"
+      type="text"
+      name="publicRoomId"
+      placeholder="publicRoomId"
+      value="defaultRoom">
+  </div>
+  <div class="form-group">
+    <input class="btn" type="submit" value="ConnectIn">
+  </div>
+</form>
